@@ -1060,6 +1060,10 @@ window.jsPsych = (function() {
     return progress_bar_amount;
   }
 
+  core.setGlobalTrialIndex = function(index){
+    global_trial_index = index;
+  }
+
   //Leave a trace in the DOM that jspsych was loaded
   document.documentElement.setAttribute('jspsych', 'present');
 
